@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="830" viewBox="0 0 1080 830" role="img" aria-label="tracing">
+<rect width="100%" height="100%" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#bd3535"/></marker></defs>
+<polyline points="180,220 180,270 470,270 470,320" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<polyline points="540,220 540,320" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="550.6" y="264" width="38.8" height="19" fill="white"/>
+<text x="570" y="278" font-family="Arial, sans-serif" font-size="14" fill="#bd3535" text-anchor="middle" font-weight="400">OTLP</text>
+<polyline points="900,220 900,270 610,270 610,320" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<polyline points="540,420 540,500" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="550.6" y="451" width="38.8" height="19" fill="white"/>
+<text x="570" y="465" font-family="Arial, sans-serif" font-size="14" fill="#bd3535" text-anchor="middle" font-weight="400">OTLP</text>
+<polyline points="400,550 320,550" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="344.45" y="525" width="31.1" height="19" fill="white"/>
+<text x="360" y="539" font-family="Arial, sans-serif" font-size="14" fill="#bd3535" text-anchor="middle" font-weight="400">API</text>
+<polyline points="760,550 680,550" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="689.05" y="525" width="61.9" height="19" fill="white"/>
+<text x="720" y="539" font-family="Arial, sans-serif" font-size="14" fill="#bd3535" text-anchor="middle" font-weight="400">запросы</text>
+<polyline points="180,600 180,680" fill="none" stroke="#bd3535" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="185.9" y="631" width="54.2" height="19" fill="white"/>
+<text x="213" y="645" font-family="Arial, sans-serif" font-size="14" fill="#bd3535" text-anchor="middle" font-weight="400">запись</text>
+<rect x="40" y="110" width="280" height="110" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="180.0" y="139" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">Shop API</text>
+<text x="180.0" y="162" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container · Java</text>
+<text x="180.0" y="187" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Добавляем OpenTelemetry</text>
+<rect x="400" y="110" width="280" height="110" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="540.0" y="139" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">CRM API</text>
+<text x="540.0" y="162" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container · Java</text>
+<text x="540.0" y="187" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Добавляем OpenTelemetry</text>
+<rect x="760" y="110" width="280" height="110" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="900.0" y="139" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">MES API</text>
+<text x="900.0" y="162" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container · C#</text>
+<text x="900.0" y="187" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Добавляем OpenTelemetry</text>
+<rect x="400" y="320" width="280" height="100" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="540.0" y="349" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">OTel Collector</text>
+<text x="540.0" y="372" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container</text>
+<text x="540.0" y="397" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Приём и обработка spans</text>
+<rect x="400" y="500" width="280" height="100" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="540.0" y="529" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">Gateway</text>
+<text x="540.0" y="552" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container · reverse proxy</text>
+<text x="540.0" y="577" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Проверка доступа</text>
+<rect x="40" y="500" width="280" height="100" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="180.0" y="529" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">Tempo</text>
+<text x="180.0" y="552" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container</text>
+<text x="180.0" y="577" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Хранение трасс</text>
+<rect x="760" y="500" width="280" height="100" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="900.0" y="529" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">Grafana</text>
+<text x="900.0" y="552" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container</text>
+<text x="900.0" y="577" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Поиск и просмотр</text>
+<rect x="40" y="680" width="280" height="100" rx="8" fill="#fff9f9" stroke="#bd3535" stroke-width="1.8"/>
+<text x="180.0" y="709" font-family="Arial, sans-serif" font-size="20" fill="#1f2937" text-anchor="middle" font-weight="600">S3</text>
+<text x="180.0" y="732" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="400">Container · object storage</text>
+<text x="180.0" y="757" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="400">Отдельный bucket трасс</text>
+<text x="32" y="39" font-family="Arial, sans-serif" font-size="27" fill="#1f2937" text-anchor="start" font-weight="600">Трейсинг</text>
+<text x="32" y="69" font-family="Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="start" font-weight="400">Серверный контур: показаны связи наблюдаемости</text>
+<text x="400" y="704" font-family="Arial, sans-serif" font-size="16" fill="#1f2937" text-anchor="start" font-weight="400">Внутри API собираем клиентские spans:</text>
+<text x="400" y="731" font-family="Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="start" font-weight="400">HTTP, PostgreSQL (общая Shop DB и MES DB),</text>
+<text x="400" y="756" font-family="Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="start" font-weight="400">RabbitMQ и S3 с моделями.</text>
+<text x="32" y="810" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="start" font-weight="400">Красный — новые компоненты, связи и доработки приложений.</text>
+</svg>
