@@ -1,0 +1,39 @@
+sequenceDiagram
+    actor UI as Оператор / MES
+    participant API as MES API
+    participant Cache as Redis
+    participant DB as PostgreSQL
+    participant Worker as Outbox worker
+
+    rect rgb(246, 249, 252)
+        Note over UI,DB: Чтение списка
+        UI->>API: Открыть список
+        API->>Cache: Найти страницу
+        alt Есть в кеше
+            Cache-->>API: Список
+        else Нет в кеше
+            API->>DB: Прочитать список
+            DB-->>API: Список
+            API->>Cache: Заполнить кеш
+        end
+        API-->>UI: Список заказов
+    end
+
+    rect rgb(250, 250, 250)
+        Note over UI,Worker: Изменение статуса
+        UI->>API: Изменить статус
+        API->>DB: Проверить версию,<br/>записать статус + outbox
+        Note over API,DB: Одна транзакция. При конфликте: 409, без инвалидации.
+        DB-->>API: COMMIT успешен
+        API->>Cache: Сменить поколение
+        API-->>UI: Новый статус
+        loop Фоновая инвалидация до успеха
+            Worker->>DB: Получить outbox
+            DB-->>Worker: Запись для обработки
+            Worker->>Cache: Сменить поколение
+            Cache-->>Worker: OK
+            Worker->>DB: Отметить выполненным
+        end
+    end
+
+    Note over API,Cache: TTL: 5 с от начала чтения БД.<br/>Запись при прежнем поколении.
