@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="logging" id="logging">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="870" pageScale="1" dx="1120" dy="870">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e0" edge="1" parent="1" source="shop" target="alloy" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.5;exitY=1.0;entryX=0.17307692307692307;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="270" />
+              <mxPoint x="475" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="crm" target="alloy" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.5;exitY=1.0;entryX=0.38461538461538464;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="290" />
+              <mxPoint x="530" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="mes" target="alloy" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.5;exitY=1.0;entryX=0.6153846153846154;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="290" />
+              <mxPoint x="590" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="infra" target="alloy" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.5;exitY=1.0;entryX=0.8269230769230769;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="270" />
+              <mxPoint x="645" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="alloy" target="gateway" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="gateway" target="loki" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="grafana" target="gateway" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="loki" target="s3" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="loki" target="alerts" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.7884615384615384;exitY=1.0;entryX=0.5;entryY=0.0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275" y="660" />
+              <mxPoint x="560" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="prom" target="alerts" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="prom" target="alloy" style="edgeStyle=none;rounded=0;html=1;endArrow=block;strokeColor=#bd3535;strokeWidth=1.7;exitX=1.0;exitY=0.5;entryX=1.0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1098" y="760" />
+              <mxPoint x="1098" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <object id="shop" c4Name="Shop API" c4Type="Container" label="&lt;b&gt;Shop API&lt;/b&gt;&lt;br&gt;Container · Java&lt;br&gt;Структурированные логи">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="30" y="110" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="crm" c4Name="CRM API" c4Type="Container" label="&lt;b&gt;CRM API&lt;/b&gt;&lt;br&gt;Container · Java&lt;br&gt;Структурированные логи">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="300" y="110" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="mes" c4Name="MES API" c4Type="Container" label="&lt;b&gt;MES API&lt;/b&gt;&lt;br&gt;Container · C#&lt;br&gt;Структурированные логи">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="570" y="110" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="infra" c4Name="Инфраструктура" c4Type="Group" label="&lt;b&gt;Инфраструктура&lt;/b&gt;&lt;br&gt;Группа источников&lt;br&gt;RabbitMQ, PostgreSQL,&lt;br&gt;S3, VM и proxy">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#f4f8fb;strokeColor=#32688c;strokeWidth=1.8;">
+            <mxGeometry x="840" y="110" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="alloy" c4Name="Grafana Alloy" c4Type="Container" label="&lt;b&gt;Grafana Alloy&lt;/b&gt;&lt;br&gt;Container · agents&lt;br&gt;Сбор и очистка логов">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="430" y="340" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="gateway" c4Name="Gateway" c4Type="Container" label="&lt;b&gt;Gateway&lt;/b&gt;&lt;br&gt;Container · reverse proxy&lt;br&gt;Проверка доступа">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="430" y="510" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="loki" c4Name="Loki" c4Type="Container" label="&lt;b&gt;Loki&lt;/b&gt;&lt;br&gt;Container&lt;br&gt;Поиск логов и правила">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="70" y="510" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="grafana" c4Name="Grafana" c4Type="Container" label="&lt;b&gt;Grafana&lt;/b&gt;&lt;br&gt;Container&lt;br&gt;Поиск по order_id">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="790" y="510" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="s3" c4Name="S3" c4Type="Container" label="&lt;b&gt;S3&lt;/b&gt;&lt;br&gt;Container · object storage&lt;br&gt;Отдельный bucket логов">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="70" y="710" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="alerts" c4Name="Alertmanager" c4Type="Container" label="&lt;b&gt;Alertmanager&lt;/b&gt;&lt;br&gt;Container&lt;br&gt;Уведомления об ошибках">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="430" y="710" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="prom" c4Name="Prometheus" c4Type="Container" label="&lt;b&gt;Prometheus&lt;/b&gt;&lt;br&gt;Container&lt;br&gt;Контроль агентов">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#1f2937;fillColor=#fff9f9;strokeColor=#bd3535;strokeWidth=1.8;">
+            <mxGeometry x="790" y="710" width="260" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="text0" value="Логирование" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=27;fontColor=#1f2937;whiteSpace=wrap;">
+          <mxGeometry x="32" y="12" width="210.08" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="text1" value="Серверный контур: показаны связи наблюдаемости" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=15;fontColor=#64748b;whiteSpace=wrap;">
+          <mxGeometry x="32" y="54" width="461.6" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="text2" value="JSON / журналы" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="490" y="236" width="145.44" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text3" value="Красный — новые компоненты, связи и доработки; синий — существующие источники." parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#64748b;whiteSpace=wrap;">
+          <mxGeometry x="32" y="835" width="718.88" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text4" value="TLS" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="577.45" y="467" width="46.879999999999995" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text5" value="Loki API" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="349.2" y="534" width="91.68" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text6" value="запросы" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="713.05" y="534" width="82.72" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text7" value="логи" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="157.6" y="656" width="55.84" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text8" value="Ruler: алерты" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="377.95" y="634" width="136.48000000000002" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text9" value="алерты" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="716.9" y="734" width="73.75999999999999" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="text10" value="scrape /metrics" parent="1" vertex="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=14;fontColor=#bd3535;whiteSpace=wrap;">
+          <mxGeometry x="835.25" y="364" width="154.4" height="23" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
